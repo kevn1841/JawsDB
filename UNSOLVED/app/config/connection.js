@@ -19,7 +19,7 @@ var source = {
         host: 'z12itfj4c1vgopf8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         user: 'c6x3ddadq4n2eee3',
         password: "esw07zh49mzvcygp",
-        database: "starwars"
+        database: "hio7r835yyja1q75"
         // TODO: Add your JawsDB connection info here
     }
 }
