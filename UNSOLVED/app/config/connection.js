@@ -13,20 +13,20 @@ var source = {
         user: 'root',
         password: "asdfghjkl8465",
         database: "starwars"
-    },
-    jawsDB: {
-        port: 3306,
-        host: 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        user: 'cctxrg62678dpc0s',
-        password: "wlx3971pdavjhmks",
-        database: "g9bvdoo1epfdpsxq"
-        // TODO: Add your JawsDB connection info here
     }
+    // jawsDB: {
+    //     port: 3306,
+    //     host: 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    //     user: 'cctxrg62678dpc0s',
+    //     password: "wlx3971pdavjhmks",
+    //     database: "g9bvdoo1epfdpsxq"
+    //     // TODO: Add your JawsDB connection info here
+    // }
 }
 
 
 // TODO: connect your jawsDB connection witht he mysql connection.
-var connection = mysql.createConnection( source.jawsDb);
+var connection = mysql.createConnection(process.env.JAWSDB_URL || source.localhost);
 
 
 
