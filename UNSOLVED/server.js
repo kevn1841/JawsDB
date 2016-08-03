@@ -7,6 +7,18 @@
 var express 	= require('express');
 var bodyParser 	= require('body-parser');
 
+var Sequelize = require('sequelize'),
+	connection;
+if (process.env.JAWSDB_URL) {
+	connection = new Sequelize(process.env.JAWSDB_URL);
+} else {
+	connection = new Sequelize('gfzisoofslobpebe', 'root', 'password',{
+		host: 'localhost',
+		dialect: 'mysql',
+		port: '3306'
+	})
+}
+
 
 
 
